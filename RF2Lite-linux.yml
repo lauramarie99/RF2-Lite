@@ -9,5 +9,9 @@ dependencies:
   - pip
   - pytorch
   - pytorch-cuda=11.7
-  - dglteam/label/cu117::dgl
   - pyg::pyg
+  - torchdata==0.9.0
+  - pandas
+  - pydantic
+  - packaging
+  - opt_einsum
