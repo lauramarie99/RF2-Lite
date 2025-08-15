@@ -211,7 +211,7 @@ def parse_templates(item, params):
         counter += 1
 
     xyz = np.vstack(xyz).astype(np.float32)
-    mask = np.vstack(mask).astype(np.bool)
+    mask = np.vstack(mask).astype(bool)
     qmap = np.vstack(qmap).astype(np.long)
     f0d = np.vstack(f0d).astype(np.float32)
     f1d = np.vstack(f1d).astype(np.float32)

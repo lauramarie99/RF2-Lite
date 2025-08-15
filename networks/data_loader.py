@@ -51,7 +51,7 @@ def MSABlockDeletion(msa, ins, nb=5):
     to_delete = block_start[:,None] + np.arange(block_size)[None,:]
     to_delete = np.unique(np.clip(to_delete, 1, N-1))
     #
-    mask = np.ones(N, np.bool)
+    mask = np.ones(N, bool)
     mask[to_delete] = 0
 
     return msa[mask], ins[mask]
